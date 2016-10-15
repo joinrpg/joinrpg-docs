@@ -4,7 +4,8 @@ JoinRPG
 Здесь будет город заложён.
 
 .. toctree::
-    
-    markdown
+    :maxdepth: 3
+
     howto-doc
+    markdown
     subdir/index
