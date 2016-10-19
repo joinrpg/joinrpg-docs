@@ -1,11 +1,9 @@
 JoinRPG
 =======
 
-Здесь будет город заложён.
+Документация для JoinRPG
 
 .. toctree::
-    :maxdepth: 3
 
     howto-doc
-    markdown
-    subdir/index
+    sample/index
