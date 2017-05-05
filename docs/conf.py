@@ -55,8 +55,8 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'RST-Test'
-copyright = u'2016, Vladimir Lebedev-Schmidthof'
+project = u'JoinRpg'
+copyright = u'2016–2017, Команда JoinRpg'
 author = u'Vladimir Lebedev-Schmidthof'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -268,8 +268,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RST-Test.tex', u'RST-Test Documentation',
-     u'Vladimir Lebedev-Schmidthof', 'manual'),
+    (master_doc, 'JoinRpg.tex', u'JoinRpg docs',
+     u'JoinRpg team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
