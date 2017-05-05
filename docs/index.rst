@@ -8,3 +8,4 @@ JoinRPG
 
     howto-doc
     plot/index
+    plot/creating-plot
