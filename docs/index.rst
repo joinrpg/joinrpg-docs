@@ -7,4 +7,4 @@ JoinRPG
     :maxdepth: 3
 
     howto-doc
-    sample/index
+    plot/index
