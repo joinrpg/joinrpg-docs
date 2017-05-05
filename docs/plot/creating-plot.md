@@ -1,6 +1,6 @@
 # Создание сюжета
 Меню → Сюжеты → Все → Создать новый
-![creating-plot](https://lh5.googleusercontent.com/YqD-XBYdUFDYu1y4k0Z9OiyK-SCBJtw_SPtM_EOZODJhOJiD02VguEHCvwz4zpORwV32n8M4jUsHV21Grm-LSbBWl602MNnFdXengX3hzgZHxyYHvJINFpXD1VGC5Ws-pk2VdILe)
+![creating-plot](creating-plot.png)
 После чего надо заполнить поля и нажать “сохранить”.
 ##Поле “Название сюжета”
 В поле “название сюжета”, кроме непосредственно названия сюжета, можно для удобства дальнейшей навигации и структуризации сюжетов вставить теги.
