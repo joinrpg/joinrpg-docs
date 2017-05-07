@@ -11,3 +11,4 @@
     creating-plot
     creating-input
     distribution
+    plot-on-group-page
