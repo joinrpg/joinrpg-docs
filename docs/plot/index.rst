@@ -9,3 +9,4 @@
     :maxdepth: 3
 
     creating-plot
+    creating-input
