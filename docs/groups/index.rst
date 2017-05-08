@@ -9,4 +9,5 @@
     :maxdepth: 3
 
     creating-group
+    notifications
     
