@@ -15,7 +15,7 @@
 
     **Жирный текст**
     *Текст курсивом*
-    ![текст для показа при недоступности картинки](http://www.206368.mrsite.com/USERIMAGES/sample(1).jpg) 
+    ![альт текст для картинки](http://www.206368.mrsite.com/USERIMAGES/sample(1).jpg) 
 
 **Поле «TODO»** соответствует аналогичному [полю у сюжетов](http://docs.joinrpg.ru/ru/latest/plot/creating-plot.html#todo).
 
