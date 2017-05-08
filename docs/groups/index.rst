@@ -11,4 +11,5 @@
     creating-group
     hidden-group
     notifications
+    other
     
