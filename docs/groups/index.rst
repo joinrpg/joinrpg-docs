@@ -9,5 +9,6 @@
     :maxdepth: 3
 
     creating-group
+    hidden-group
     notifications
     
