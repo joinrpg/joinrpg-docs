@@ -87,4 +87,4 @@
 
 .. attention:: В том случае, если для какого-либо персонажа из группы выбрана опция «скрывать игрока», при использовании специальных символов его имя и контакты будут показаны все равно.
 
-.. hint:: Показывать контакты можно для любой группы: не только общедоступной из сетки ролей, но также `специальные <http://docs.joinrpg.ru/ru/latest/groups/hidden-group.html#id5>`_ и ` скрытые <http://docs.joinrpg.ru/ru/latest/groups/hidden-group.html>`_ группы
+.. hint:: Показывать контакты можно для любой группы: не только общедоступной из сетки ролей, но также `специальные <http://docs.joinrpg.ru/ru/latest/groups/hidden-group.html#id5>`_ и `скрытые <http://docs.joinrpg.ru/ru/latest/groups/hidden-group.html>`_ группы
