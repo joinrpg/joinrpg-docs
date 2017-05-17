@@ -10,5 +10,6 @@
 
     creating-plot
     creating-input
+    special
     handout
     other
