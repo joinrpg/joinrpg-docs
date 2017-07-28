@@ -19,7 +19,7 @@ Pygments==2.2.0
 pygobject==3.22.0
 pytz==2016.7
 pyxdg==0.25
-recommonmark==0.4.0
+recommonmark
 roman==2.0.0
 SecretStorage==2.3.1
 six==1.10.0
