@@ -10,4 +10,4 @@ JoinRPG
     project/index
     groups/index
     plot/index
-    
+    checkin/index
