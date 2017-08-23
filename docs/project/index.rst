@@ -6,7 +6,6 @@
 .. toctree::
     :maxdepth: 3
 
-
     new_project
     access
     after
