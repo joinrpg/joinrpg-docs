@@ -7,7 +7,7 @@ JoinRPG
     :maxdepth: 3
     
     register/index
-	for_players/index
+    for_players/index
     project/index
     groups/index
     plot/index
