@@ -14,6 +14,6 @@
 .. toctree::
     :maxdepth: 3
 
-    subscriptions 
+	subscriptions 
 	claim_comments
 	forums
