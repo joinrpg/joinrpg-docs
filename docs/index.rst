@@ -9,6 +9,7 @@ JoinRPG
     register/index
     for_players/index
     project/index
+    communication/index
     accommodation/index
     groups/index
     plot/index
