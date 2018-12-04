@@ -14,3 +14,4 @@ JoinRPG
     groups/index
     plot/index
     checkin/index
+    api/index
