@@ -9,9 +9,10 @@ X-API — экспериментальная версия
 
 Аутентификация
 -----------------------------
+::
 
-POST http://dev.joinrpg.ru/x-api/token
-Content-type: application/x-www-form-urlencoded
+    POST http://dev.joinrpg.ru/x-api/token
+    Content-type: application/x-www-form-urlencoded
 
 **Тело запроса:** ::
 
