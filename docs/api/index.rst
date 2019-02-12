@@ -16,9 +16,7 @@ X-API — экспериментальная версия
 
 **Тело запроса:** ::
 
-    grant_type: password
-    username: <user@example.com>
-    password: <password here>
+    grant_type=password&username=<percent encoded email>&password=<percent encoded password>
     
 **Ответ:** ::
 
