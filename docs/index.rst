@@ -2,7 +2,7 @@ JoinRPG
 =======
 
 Документация для JoinRPG.
-Если вы хотите потестировать какую-то функцию или разобраться с функционалом — вам пригодится (тестовая серда)[http://docs.joinrpg.ru/ru/latest/project/testing.html].
+Если вы хотите потестировать какую-то функцию или разобраться с функционалом — вам пригодится `тестовая среда <http://docs.joinrpg.ru/ru/latest/project/testing.html>`_.
 
 .. toctree::
     :maxdepth: 3
