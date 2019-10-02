@@ -16,7 +16,7 @@
 	character_vs_application
     settings_for_role_list
 	for_old_projects
-	type_fields
+	field_types
 	filter_by_field
 	
 
