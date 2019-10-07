@@ -14,6 +14,7 @@ JoinRPG
     project/index
     fields/index
     communication/index
+    finance/index
     accommodation/index
     groups/index
     plot/index
