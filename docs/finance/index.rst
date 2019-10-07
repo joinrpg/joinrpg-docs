@@ -6,7 +6,7 @@
 
 .. toctree::
     :maxdepth: 3
-	
-	discount
+
+    discount
 	
 
