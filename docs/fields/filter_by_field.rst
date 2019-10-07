@@ -4,7 +4,7 @@
 Поля персонажа типов «выбор» и «мультивыбор» автоматически формируют `специальные группы <http://docs.joinrpg.ru/ru/latest/groups/hidden-group.html#id5>`_, отображающиеся как часть сетки ролей.
 
 .. figure:: filter_by_meaning.PNG
-       :scale: 100 %
+       :width: 100 %
        :align: center
        :alt: Фильтр по значению поля
 	   
