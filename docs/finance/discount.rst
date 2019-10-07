@@ -29,7 +29,6 @@
 Уведомления о запросах льготы от игроков приходят всем мастерам, `подписанным на финансовые операции <http://docs.joinrpg.ru/ru/latest/communication/subscriptions.html>`_. Комментарий с запросом льготы появляется в заявке игрока:
 
 .. figure:: comment_discount.PNG
-       :scale: 100 %
        :align: center
        :alt: Запрос льготы с точки зрения мастера
 	   
