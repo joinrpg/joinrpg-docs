@@ -10,5 +10,6 @@
     :maxdepth: 3
 
     inform_about_payment
+    discount
     print_claim
     restore_claim
