@@ -8,8 +8,7 @@
 
 После подтверждения данных появится соответствующая отметка в профиле.
 
-.. figure:: confirmed.PNG
-       :width: 100 %
+.. figure:: confirmed.png
        :align: center
        :alt: Подтвержденный профиль
 
