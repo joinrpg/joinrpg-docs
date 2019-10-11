@@ -15,6 +15,7 @@ JoinRPG
     fields/index
     communication/index
     finance/index
+    online_payment/index
     accommodation/index
     groups/index
     plot/index
