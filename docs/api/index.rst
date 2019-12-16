@@ -11,7 +11,7 @@ X-API — экспериментальная версия
 -----------------------------
 ::
 
-    POST http://dev.joinrpg.ru/x-api/token
+    POST https://dev.joinrpg.ru/x-api/token
     Content-type: application/x-www-form-urlencoded
 
 **Тело запроса:** ::
