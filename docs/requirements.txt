@@ -14,7 +14,7 @@ recommonmark==0.4.0
 requests>=2.20.0
 setuptools==36.2.4
 six==1.10.0
-snowballstemmer==1.2.1
+snowballstemmer==2.1.0
 sphinx==1.6.3
 sphinxcontrib-websupport==1.0.1
 typing==3.6.1
