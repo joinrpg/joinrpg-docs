@@ -1,4 +1,4 @@
-.. character-slot-label:
+.. _character-slot-label:
 
 Слоты персонажей
 ============
