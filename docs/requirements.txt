@@ -9,7 +9,7 @@ commonmark==0.9.1
 docutils==0.19
 idna==3.4
 imagesize==1.4.1
-pytz==2022.2.1
+pytz==2022.4
 recommonmark==0.7.1
 requests>=2.20.0
 setuptools==65.3.0
