@@ -20,5 +20,6 @@ JoinRPG
     accommodation/index
     groups/index
     plot/index
+    schedule/index
     checkin/index
     api/index
