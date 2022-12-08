@@ -3,7 +3,7 @@ MarkupSafe==2.1.1
 Pygments==2.13.0
 alabaster==0.7.12
 babel==2.11.0
-certifi==2022.9.24
+certifi==2022.12.7
 chardet==5.0.0
 commonmark==0.9.1
 docutils==0.19
