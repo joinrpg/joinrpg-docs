@@ -84,4 +84,6 @@
 3. `Загружать по одному, убирая из очереди <https://joinrpg.ru/swagger/index.html#/CharacterApi/get_x_game_api__projectId__characters__characterId_>`_. Это можно делать в несколько потоков, но быть готовым в случае ошибки попробовать повторно после паузы.
 4. Если (1) прилетел персонаж, который уже есть в очереди на обновление, не обновлять его дважды.
 
-Реализацию онлайн-импорта можно посмотреть тут https://github.com/sth-larp/import-server
+Реализацию онлайн-импорта можно посмотреть например тут:
+ - https://github.com/sth-larp/import-server
+ - https://github.com/KissOfTheVoid/parse_joinrpg
