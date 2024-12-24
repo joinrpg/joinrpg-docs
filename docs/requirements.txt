@@ -1,4 +1,4 @@
-Jinja2==3.1.4
+Jinja2==3.1.5
 MarkupSafe==2.1.5
 Pygments==2.18.0
 alabaster==0.7.16
