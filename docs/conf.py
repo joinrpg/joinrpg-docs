@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'JoinRpg'
-copyright = u'2016–2021, Команда JoinRpg'
+copyright = u'2016–2025, Команда JoinRpg'
 author = u'Vladimir Lebedev-Schmidthof'
 
 # The version info for the project you're documenting, acts as replacement for
