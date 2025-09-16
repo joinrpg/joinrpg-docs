@@ -23,3 +23,4 @@ JoinRPG
     schedule/index
     checkin/index
     api/index
+    personal_data_policy/index
