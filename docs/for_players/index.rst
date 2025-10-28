@@ -9,7 +9,8 @@
 .. toctree::
     :maxdepth: 3
 
-    inform_about_payment
+    contacts
+	inform_about_payment
     pay_online
     discount
     print_claim
