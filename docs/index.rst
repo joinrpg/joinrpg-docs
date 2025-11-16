@@ -1,7 +1,7 @@
 JoinRPG
 =======
 
-Документация для JoinRPG.
+Документация для JoinRPG. Deploytest
 
 Если вы хотите потестировать какую-то функцию или разобраться с функционалом — вам пригодится `тестовая среда <http://docs.joinrpg.ru/ru/latest/project/testing.html>`_.
 
