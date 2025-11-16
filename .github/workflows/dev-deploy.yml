@@ -59,7 +59,7 @@ jobs:
 
       - name: sync to s3
         run: |
-          cd docs-html
+          cd build_html
           s3cmd sync --recursive --exclude "*.css" --exclude "*.js" * s3://docs.dev.joinrpg.ru
           s3cmd sync --recursive --include "*.css" * --mime-type="text/css" s3://docs.dev.joinrpg.ru
           s3cmd sync --recursive --include "*.js" * --mime-type="application/javascript" s3://docs.dev.joinrpg.ru
