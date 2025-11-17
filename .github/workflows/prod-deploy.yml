@@ -1,0 +1,63 @@
+name: Build docs
+
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Sphinx docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+
+      - name: Set Python
+        uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r docs/requirements.txt
+
+      - name: Build static files
+        run: |
+          cd docs
+          make html
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v5.0.0
+        with:
+          name: docs-html
+          path: docs/_build/html
+
+  deploy:
+    name: Deploy to docs.joinrpg.ru S3
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download built HTML
+        uses: actions/download-artifact@v6.0.0
+        with:
+          name: docs-html
+          path: build_html
+
+      - name: Set up S3cmd cli tool
+        uses: s3-actions/s3cmd@v2.0.1
+        with:
+            provider: yandex
+            region: ru-central1
+            access_key: ${{ secrets.SYNC_ACCESS_ID }}
+            secret_key: ${{ secrets.SYNC_ACCESS_SECRET }}
+
+      - name: sync to s3
+        run: |
+          cd build_html
+          s3cmd sync --recursive --exclude "*.css" --exclude "*.js" * s3://docs.joinrpg.ru
+          s3cmd sync --recursive --include "*.css" * --mime-type="text/css" s3://docs.joinrpg.ru
+          s3cmd sync --recursive --include "*.js" * --mime-type="application/javascript" s3://docs.joinrpg.ru
