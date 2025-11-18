@@ -2,8 +2,8 @@ name: Build docs
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
