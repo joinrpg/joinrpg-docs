@@ -29,7 +29,39 @@ jobs:
       - name: Build static files
         run: |
           cd docs
-          make html-all
+          make html-all 2>&1 | tee build.log
+          
+          # Parse warnings and errors and create GitHub annotations
+          if grep -E "(WARNING|ERROR|CRITICAL)" build.log > /dev/null; then
+            echo "::group::Build Warnings and Errors"
+            while IFS= read -r line; do
+              # Match Sphinx warning/error format: file.rst:123: WARNING: message
+              if echo "$line" | grep -qE "\.(rst|md):[0-9]+: (WARNING|ERROR|CRITICAL)"; then
+                file=$(echo "$line" | sed -E 's|^([^:]+):[0-9]+:.*|\1|')
+                line_num=$(echo "$line" | sed -E 's|^[^:]+:([0-9]+):.*|\1|')
+                message=$(echo "$line" | sed -E 's|^[^:]+:[0-9]+: (WARNING|ERROR|CRITICAL): ||')
+                
+                # Make path relative to repo root (we're in docs/ directory)
+                if [[ "$file" != /* ]]; then
+                  # Already relative, ensure it's from repo root
+                  file="docs/$file"
+                else
+                  # Absolute path, convert to relative
+                  file=$(realpath --relative-to="$GITHUB_WORKSPACE" "$file" 2>/dev/null || echo "$file")
+                fi
+                
+                if echo "$line" | grep -qE "ERROR|CRITICAL"; then
+                  echo "::error file=$file,line=$line_num::$message"
+                else
+                  echo "::warning file=$file,line=$line_num::$message"
+                fi
+              fi
+            done < build.log
+            echo "::endgroup::"
+          fi
+          
+          # Show summary
+          echo "::notice::Build completed. Check the log above for details."
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v5.0.0
