@@ -27,7 +27,7 @@ jobs:
       - name: Build static files
         run: |
           cd docs
-          make html
+          make html-all
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v5.0.0
