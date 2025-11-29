@@ -54,6 +54,17 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
+.PHONY: html-old
+html-old:
+	$(SPHINXBUILD) -b html -D html_baseurl='/ru/latest/' $(ALLSPHINXOPTS) $(BUILDDIR)/html/ru/latest
+	@echo
+	@echo "Old link style version for backward compatibility built in $(BUILDDIR)/html/ru/latest"
+
+.PHONY: html-all
+html-all: html html-old
+	@echo
+	@echo "Build finished. HTML pages available at / and /ru/latest"
+
 .PHONY: dirhtml
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
