@@ -15,7 +15,7 @@ requests>=2.20.0
 setuptools==80.0.0
 six==1.17.0
 snowballstemmer==3.0.1
-sphinx==8.2.3
+sphinx==9.0.4
 sphinxcontrib-websupport==2.0.0
 typing==3.7.4.3
 urllib3>=1.24.2
