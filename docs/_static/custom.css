@@ -1,0 +1,22 @@
+/* Fix search button text ("Искать") getting clipped in the sidebar.
+   basic.css hard-codes input[type=text]/input[type=submit] widths as 80%/20%,
+   which only fits the English default "Go" label. Switch to flexbox so the
+   button sizes to its content regardless of the localized label length. */
+div.sphinxsidebar #searchbox form.search {
+    display: flex;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    float: none;
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+div.sphinxsidebar #searchbox input[type="submit"] {
+    float: none;
+    width: auto;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 0.25em 0.6em;
+}
