@@ -30,6 +30,8 @@ jobs:
         run: |
           cd docs
           make html-all
+        env:
+          DOCS_HOME_URL: https://dev.joinrpg.ru
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v5.0.0

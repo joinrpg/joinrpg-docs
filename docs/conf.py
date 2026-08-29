@@ -16,7 +16,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
@@ -186,8 +186,14 @@ todo_include_todos = False
 # Custom sidebar templates, maps document names to template names.
 #
 html_sidebars = {
-        '**': ['globaltoc.html', 'searchbox.html']
+        '**': ['hometoc.html', 'globaltoc.html', 'searchbox.html']
     }
+
+# URL of the main JoinRpg site, linked from the "На главную" sidebar item.
+# Overridden to the dev site by DOCS_HOME_URL in the dev-deploy CI workflow.
+html_context = {
+    'home_url': os.environ.get('DOCS_HOME_URL', 'https://joinrpg.ru'),
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
