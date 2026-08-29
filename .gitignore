@@ -1,0 +1,4 @@
+# Python virtual environments used for building the docs locally
+.venv*/
+venv/
+env/
