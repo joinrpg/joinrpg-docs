@@ -42,6 +42,9 @@ jobs:
   deploy:
     name: Deploy to docs.dev.joinrpg.ru S3
     needs: build
+    # PR от dependabot не получают секреты репозитория, поэтому деплой
+    # для них всегда падал бы. Сборка (job build) при этом проверяется.
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
 
     steps:
