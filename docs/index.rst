@@ -8,7 +8,6 @@ JoinRPG
 .. toctree::
     :maxdepth: 3
     
-    medical_info/index
     register/index
     for_players/index
     project/index
@@ -23,4 +22,4 @@ JoinRPG
     schedule/index
     checkin/index
     api/index
-    personal_data_policy/index
+    misc
