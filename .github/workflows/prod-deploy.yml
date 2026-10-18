@@ -78,13 +78,13 @@ jobs:
         run: |
           pip install s3cmd==2.4.0
           # В имени бакета есть точки: адрес вида <бакет>.s3.… не проходит проверку сертификата,
-          # поэтому path-style (host_bucket без %(bucket)s)
+          # поэтому path-style: host_bucket без %(bucket)s, запросы идут на host_base
           cat > ~/.s3cfg <<CFG
           [default]
           access_key = $ACCESS_KEY
           secret_key = $SECRET_KEY
           host_base = s3.ru-6.storage.selcloud.ru
-          host_bucket = s3.ru-6.storage.selcloud.ru
+          host_bucket = docs.joinrpg.ru
           bucket_location = ru-6
           use_https = True
           CFG
