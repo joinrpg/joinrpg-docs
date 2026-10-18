@@ -61,3 +61,40 @@ jobs:
           s3cmd sync --recursive --exclude "*.css" --exclude "*.js" * s3://docs.joinrpg.ru
           s3cmd sync --recursive --include "*.css" * --mime-type="text/css" s3://docs.joinrpg.ru
           s3cmd sync --recursive --include "*.js" * --mime-type="application/javascript" s3://docs.joinrpg.ru
+
+  deploy-selectel:
+    name: Deploy to docs.joinrpg.ru Selectel S3
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download built HTML
+        uses: actions/download-artifact@v6.0.0
+        with:
+          name: docs-html
+          path: build_html
+
+      - name: Set up S3cmd cli tool
+        run: |
+          pip install s3cmd==2.4.0
+          # В имени бакета есть точки: адрес вида <бакет>.s3.… не проходит проверку сертификата,
+          # поэтому path-style: host_bucket без %(bucket)s, запросы идут на host_base
+          cat > ~/.s3cfg <<CFG
+          [default]
+          access_key = $ACCESS_KEY
+          secret_key = $SECRET_KEY
+          host_base = s3.ru-6.storage.selcloud.ru
+          host_bucket = docs.joinrpg.ru
+          bucket_location = ru-6
+          use_https = True
+          CFG
+        env:
+          ACCESS_KEY: ${{ secrets.SELECTEL_SYNC_ACCESS_ID }}
+          SECRET_KEY: ${{ secrets.SELECTEL_SYNC_ACCESS_SECRET }}
+
+      - name: sync to s3
+        run: |
+          cd build_html
+          s3cmd sync --recursive --exclude "*.css" --exclude "*.js" * s3://docs.joinrpg.ru
+          s3cmd sync --recursive --include "*.css" * --mime-type="text/css" s3://docs.joinrpg.ru
+          s3cmd sync --recursive --include "*.js" * --mime-type="application/javascript" s3://docs.joinrpg.ru
