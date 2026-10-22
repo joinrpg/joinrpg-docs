@@ -8,5 +8,6 @@
 
     new_project
     access
+    sensitive_data
     after
     testing
