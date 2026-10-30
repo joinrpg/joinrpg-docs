@@ -12,7 +12,7 @@ imagesize==2.0.1
 pytz==2026.5
 recommonmark==0.7.1
 requests>=2.34.2
-setuptools==84.2.0
+setuptools==84.2.1
 six==1.17.0
 snowballstemmer==3.1.1
 sphinx==9.1.0
